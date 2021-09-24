@@ -2,7 +2,7 @@
    ========================================================================== */
 
 @font-face {
-  font-family: "Blogger Sans";
+  font-family: "Blogger Sans", "Arial", sans-serif;
   src: url("../fonts/BloggerSans-Bold.woff2") format("woff2"),
       url("../fonts/BloggerSans-Bold.woff") format("woff");
   font-weight: 700;
@@ -11,7 +11,7 @@
 }
 
 @font-face {
-  font-family: "Blogger Sans";
+  font-family: "Blogger Sans", "Arial", sans-serif;
   src: url("../fonts/BloggerSans.woff2") format("woff2"),
       url("../fonts/BloggerSans.woff") format("woff");
   font-weight: 400;
@@ -20,7 +20,7 @@
 }
 
 @font-face {
-  font-family: "Blogger Sans";
+  font-family: "Blogger Sans", "Arial", sans-serif;
   src: url("../fonts/BloggerSans-Medium.woff2") format("woff2"),
       url("../fonts/BloggerSans-Medium.woff") format("woff");
   font-weight: 500;
@@ -29,28 +29,10 @@
 }
 
 @font-face {
-  font-family: "Blogger Sans";
+  font-family: "Blogger Sans", "Arial", sans-serif;
   src: url("../fonts/BloggerSans-Light.woff2") format("woff2"),
       url("../fonts/BloggerSans-Light.woff") format("woff");
   font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Arial";
-  src: url("../fonts/ArialRegular.woff2") format("woff2"),
-      url("../fonts/ArialRegular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Arial";
-  src: url("../fonts/ArialBold.woff2") format("woff2"),
-      url("../fonts/ArialBold.woff") format("woff");
-  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
