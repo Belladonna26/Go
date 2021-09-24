@@ -5,22 +5,51 @@
   "description": "Личный проект «Go» от HTML Academy",
   "repository": {
     "type": "git",
-    "url": "git@github.com:htmlacademy-javascript/1572931-kekstagram-23.git"
+    "url": "git@github.com:Belladonna26/Go.git"
   },
   "bugs": {
-    "url": "https://github.com/htmlacademy-javascript/1572931-kekstagram-23/issues"
+    "url": "git@github.com:Belladonna26/Go.git/issues"
   },
   "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.0.0",
+    "autoprefixer": "10.2.5",
     "browser-sync": "2.26.14",
+    "gulp": "4.0.2",
+    "gulp-plumber": "1.2.1",
+    "gulp-postcss": "9.0.0",
+    "gulp-sass": "4.1.0",
+    "gulp-sourcemaps": "3.0.0",
+    "postcss": "8.2.8",
     "eslint": "7.18.0",
-    "eslint-config-htmlacademy": "4.0.0"
+    "eslint-config-htmlacademy": "4.0.0",
+    "stylelint": "13.12.0",
+    "stylelint-config-htmlacademy": "0.1.4"
   },
   "license": "MIT",
   "dependencies": {},
   "scripts": {
     "start": "browser-sync start --server --no-ui --files \"js/**/*.js\"",
-    "test": "eslint js/"
+    "test": "eslint js/",
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss --fix",
+    "testEd": "npm run editorconfig && npm run stylelint",
+    "build": "gulp styles",
+    "startgulp": "gulp",
+    "watch": "gulp watcher"
   },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.scss"
+  ],
   "engines": {
     "node": "14.x",
     "npm": "6.x"
