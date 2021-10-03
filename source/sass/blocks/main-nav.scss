@@ -1,0 +1,204 @@
+@import "../global/variables.scss";
+
+.main-nav {
+  padding-left: 25px;
+  padding-right: 25px;
+  .main-nav__item-main-nav-toggle-button {
+    @media (max-width: $only-mobile) {
+      position: absolute;
+      right: 25px;
+    }
+  }
+  .main-nav__user-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  &:not(.main-nav_opened) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .main-nav__list {
+        @media (max-width: $only-mobile) {
+        margin: 0 0 60px 0;
+      }
+    }
+    .main-nav__item:not(:first-child) {
+      display: none;
+    }
+    .main-nav-slogan__opinion {
+      @media (max-width: $only-mobile) {
+        display: none;
+      }
+    }
+    .main-nav-slogan__main-editor {
+      @media (max-width: $only-mobile) {
+        display: none;
+      }
+    }
+    .main-nav__logo-image_blue {
+      display: none;
+    }
+
+    .main-nav__user-list {
+      @media (max-width: $only-mobile) {
+        position: absolute;
+        top: 457px;
+      }
+    }
+    .main-nav__user-link {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      @media (max-width: $only-mobile) {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    .main-nav-user-link__text {
+      display: none;
+    }
+    .main-nav__user-link_tel {
+      background-color: $neon-carrot;
+      @media (max-width: $only-mobile) {
+      }
+    }
+    .main-nav__user-link_mail {
+      background-color: $sunglow;
+      @media (max-width: $only-mobile) {
+      }
+    }
+    .main-nav__user-link_autorize {
+      @include font(17px, 20px);
+      width: 190px;
+      height: 40px;
+      border-radius: 25px;
+      text-decoration: none;
+      color: $big-stone;
+    }
+    .main-nav__user-link-tel-icon_opened {
+      display: none;
+    }
+    .main-nav__user-link-mail_opened {
+      display: none;
+    }
+    .social {
+      display: none;
+    }
+
+    @media (max-width: $only-mobile) {
+      height: 27px;
+    }
+  }
+
+    &_opened {
+      width: 100%;
+      background-color: #fff;
+
+      .main-nav__list {
+        margin: 0 0 51px 0;
+      }
+      .main-nav__logo-image {
+        display: none;
+
+        &_blue {
+          width: 100px;
+          height: 15px;
+        }
+      }
+      .main-nav__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .main-nav__item_main {
+        @media (max-width: $only-mobile) {
+          display: flex;
+          justify-content: space-between;
+          align-items: baseline;
+
+          min-height: 27px;
+          margin-bottom: 74px;
+        }
+      }
+      .main-nav__link {
+        @include font(30px, 35px);
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $big-stone-darker;
+      }
+
+      .main-nav__user-list {
+        @media (max-width: $only-mobile) {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+      .main-nav__user-link:not(:last-child) {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        text-decoration: none;
+        @media (max-width: $only-mobile) {
+          width: 45px;
+          height: 45px;
+          background-color: $big-stone-the-most-darker;
+        }
+      }
+      .main-nav__user-item:last-child {
+        margin-bottom: 51px;
+        order: -1;
+      }
+      .main-nav__user-item:not(:last-child) {
+        display: flex;
+        align-items:center;
+        @media (max-width: $only-mobile) {
+          column-gap: 16px
+        }
+      }
+      .main-nav-user-link__text {
+        @include font(16px, 18px);
+        font-weight: 700;
+        color: $big-stone-darker;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+      .main-nav__user-link_tel-icon {
+        display: none;
+      }
+      .main-nav__user-link_mail-icon {
+        display: none;
+      }
+
+      .main-nav__user-link_autorize {
+        @media (max-width: $only-mobile) {
+          @include font(17px, 30px);
+          width: 270px;
+          height: 50px;
+          border-radius: 25px;
+      }
+    }
+  }
+}
+
+.main-nav__list {
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav-slogan__title {
+    @media (max-width: $only-mobile) {
+    @include font(36px, 40px);
+    margin: 0;
+    font-weight: 700;
+    text-align: center;
+    color: $white;
+  }
+}
+
+@import "main-nav-toggle-button.scss";

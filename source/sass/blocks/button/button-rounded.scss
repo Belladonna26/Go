@@ -1,0 +1,7 @@
+.button-rounded {
+  @include button();
+
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: $sunglow-lighter;
+}
