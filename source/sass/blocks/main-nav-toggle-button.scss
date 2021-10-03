@@ -1,0 +1,30 @@
+@import "button/button-mixin.scss";
+@import "global/variables.scss";
+
+.main-nav-toggle-button {
+  @include button();
+  display: none;
+
+  &_visible {
+    display: inline-flex;
+  }
+}
+
+.main-nav-toggle-button__icon {
+  display: inline-flex;
+
+  width: 25px;
+  height: 11px;
+
+  // vertical-align: top;
+
+  background-image: url("./../img/icons/icon-burger.svg");
+
+  &_close {
+    width: 19px;
+    height: 19px;
+
+    background-image: url("./../img/icons/icon_menu_mobile_close.svg");
+  }
+}
+

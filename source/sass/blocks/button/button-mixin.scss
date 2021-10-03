@@ -1,0 +1,44 @@
+@mixin button() {
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: fit-content;
+  max-width: 100%;
+  padding: 0;
+
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+
+  vertical-align: top;
+
+  outline: none;
+  border: none;
+  background-color: transparent;
+
+  // stylelint-disable-next-line
+  @at-root {
+    a:not([href])#{&},
+    button:disabled#{&} {
+      cursor: auto;
+    }
+  }
+
+  &_width_auto {
+    width: 100%;
+  }
+
+  img,
+  svg {
+    display: block;
+  }
+
+  &__text {
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

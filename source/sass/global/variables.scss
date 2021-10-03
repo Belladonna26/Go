@@ -1,0 +1,25 @@
+$big-stone: #161C35;
+$big-stone-darker: #192144;
+$big-stone-the-most-darker: #121936;
+$white: #fff;
+$neon-carrot: #FF8D30;
+$sunglow: #FFBD30;
+$sunglow-lighter:  #FFD74B;
+
+
+// Viewports
+$mobile-width: 320px;
+$only-mobile: 767px;
+$tablet-width: 768px;
+$only-tablet: 1439px;
+$desktop-width: 1440px;
+
+//Font size
+@mixin font($font-size: 14px, $line-height: 14px) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+// Times
+$time-microinteraction: 250ms;
+
