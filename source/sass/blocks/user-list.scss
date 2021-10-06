@@ -2,5 +2,8 @@
 
 .user-list {
   display: flex;
+  @media (min-width: $tablet-width) and (max-width: $only-tablet) {
+    justify-content: flex-end;
+  }
 }
 

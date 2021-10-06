@@ -1,18 +1,19 @@
+@import "../global/variables.scss";
+
 .page-header {
   display: flex;
-
-  .main-nav:not(.main-nav_opened) {
-    padding-top: 19px;
-  }
-
-  .main-nav_opened {
-    padding-top: 27px;
-  }
-
+  background-repeat: no-repeat;
   @media (max-width: $only-mobile) {
-    height: 484px;
+    min-height: 484px;
     background-image: url(".././img/traveller-illustration-mobile.svg"), url(".././img/globe-back-mobile.png");
     background-position: center bottom ;
-    background-repeat: no-repeat;
+  }
+  @media (min-width: $tablet-width) and (max-width: $only-tablet) {
+    min-height: 855px;
+    background-color: $big-stone-lighter;
+    background-image: url(".././img/traveller-illustration-tablet.svg"), url(".././img/globe-back-tablet.png");
+    background-position: center bottom ;
   }
 }
+
+
